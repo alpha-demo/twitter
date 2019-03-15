@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-position: top right;
     max-width: 100% ! important;
-    overflow: hidden;
+    /*overflow: hidden;*/
     text-align: center;
     vertical-align: middle;
 }

@@ -160,6 +160,47 @@ Summary		MONALYSE + TechnicalTestMonalyse
  */
 
 
+require_once('TwitterAPIExchange.php');
+
+$settings = array(
+    'oauth_access_token'        => "1106145334475005953-TD9aqQLl7ndKuqqrGMNwuvN4VL5U39",
+    'oauth_access_token_secret' => "jHEPOT418ChdVunXaTtLDscNHepcGkgXw1Whhrg5Ji7Dy",
+    'consumer_key'              => "KTWsb6TveGgDz3ua7oW9PGkpt",
+    'consumer_secret'           => "R9QIEFo0xtSyYgzfaFk6lNQZSEXBQLTDTKLg3eC2CzfBs6PMzd"
+);
+
+$url = 'https://api.twitter.com/1.1/search/tweets.json';
+$getfield = '?q=nasa&result_type=popular';
+$requestMethod = 'GET';
+
+$twitter = new TwitterAPIExchange($settings);
+
+$data = $twitter->setGetfield($getfield)->buildOauth($url, $requestMethod)->performRequest();
+
+echo "<pre>";
+print_r(json_decode($data));
+echo "</pre>";
+
+/*
+$json_string = json_encode(json_decode($data), JSON_PRETTY_PRINT);
+
+
+echo $json_string;
+
+    // "<pre>" . "" . "</pre>";
+
+
+
+*/
+
+
+
+
+
+
+
+
+
 /* //// ********************* /// ************** // ******* // O // ******* // ************** /// *********************  //// */
 ?>
 
