@@ -88,7 +88,7 @@ echo "<div id='div-search-results'>";
         echo "</table>";
     echo "</div>";
     echo '
-        <form action="index.html">
+        <form action="index.php">
            <div id="div-back-button"><input type="submit" value="New Search" class="btn-primary"></div>
         </form>
     ';
