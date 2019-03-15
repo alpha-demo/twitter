@@ -13,90 +13,109 @@ body {
     background-image: url("alpha.background.svg");
     background-repeat: no-repeat;
     background-position: top right;
-    max-width: 100% ! important;
-    /*overflow: hidden;*/
+    font-family: "Segoe UI",Arial,sans-serif;
     text-align: center;
-    vertical-align: middle;
 }
 
-a, .card a {
-    color: gold;
+#div-form {
+    width: 60%;
+    margin-top: 110px;
+    margin-right: auto;
+    margin-bottom: 110px;
+    margin-left: auto;
+    padding: 21px;
+    border: solid 1px #1da1f2;
+    border-radius: 7px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    overflow: hidden;
 }
 
-.cls-welcome-title {
-    width: 100%;
-    margin-bottom: 28px;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.cls-float-left {
-    height: 420px;
-    margin-left: 11px;
-    margin-right: 11px;
+.class-div-first-column {
+    width: 56%;
+    margin-top: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 11px;
     float: left;
 }
 
-.cls-demo-description {
-    margin-top: 35px;
+.class-div-second-column {
+    width: 37%;
+    margin-top: 7px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 11px;
+    text-align: left;
+    float: left;
 }
 
-.cls-card-description {
+#div-submit-button {
     text-align: center;
 }
 
-.cls-row {
-    margin-bottom: 91px;
+.class-div-input {
+    margin: 15px;
 }
 
-a:hover, .card a:hover {
-    color: white ! important;
+#div-search-results {
+    margin-top: 70px;
+    margin-bottom: 210px;
 }
 
-/* Overwritten Styles*/
-.navbar {
-    color: white ! important;
-    background-color: black ! important;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: white ! important;
-}
-
-.navbar-light:hover .navbar-nav:hover .nav-link:hover {
-    color: gold ! important;
-}
-
-.navbar-light .navbar-brand, .navbar-light .navbar-light {
-    color: white ! important;
-}
-
-.navbar-brand:hover {
-    color: gold ! important;
-}
-
-.card {
+#div-search-table-results {
     width: 100%;
-    height: 100%;
-    color: white;
-    border: solid 1px white;
-    background: rgba(255, 255, 255, 0.07);
-    margin-bottom: 30px;
-    margin-top: 30px;
+    text-align: left;
+}
+
+#table-search-results {
+    width: 84%;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 1px #1da1f2;
     border-radius: 7px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
     overflow: hidden;
-    margin-bottom: 0px ! important;
+}
+
+th {
+    text-align: center;
+    background-color: #1da1f2;
+}
+
+tr {
+    border: solid 1px #1da1f2;
+}
+
+td {
+    border: solid 1px #1da1f2;
 }
 
 .btn-primary {
-    border: solid 1px black ! important;
-    color: black ! important;
-    background-color: gold ! important;
+    width: 140px;
+    height: 35px;
+    background-color: #1da1f2;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
 }
 
 .btn-primary:hover {
-    border: solid 1px white ! important;
-    color: white ! important;
-    background-color: gold ! important;
+    font-size: 13px;
+}
+
+#div-back-button {
+    width: 140px;
+    height: 35px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    background-color: #1da1f2;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+#div-back-button:hover {
+    font-size: 13px;
 }
